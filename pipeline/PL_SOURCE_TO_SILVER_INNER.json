@@ -206,7 +206,7 @@
 				"type": "Script",
 				"dependsOn": [
 					{
-						"activity": "Bronze_To_Silver",
+						"activity": "Checking_Load_Type_And_Update_Watermark",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -319,7 +319,14 @@
 			{
 				"name": "Checking_Load_Type_And_Update_Watermark",
 				"type": "IfCondition",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Bronze_To_Silver",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
