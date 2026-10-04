@@ -11,6 +11,10 @@
 			"type": "string",
 			"defaultValue": "https://adlsofcaresync.dfs.core.windows.net/"
 		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "1002-145306-2qi2zq23"
+		},
 		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://CareSyncProject-Keyvault.vault.azure.net/"
@@ -38,10 +42,6 @@
 		"LS_PostgreSql_properties_typeProperties_username": {
 			"type": "string",
 			"defaultValue": "neondb_owner"
-		},
-		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
-			"type": "string",
-			"defaultValue": "1002-145306-2qi2zq23"
 		},
 		"containerUri": {
 			"type": "string",
@@ -76,6 +76,9 @@
 					"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('LS_AzureKeyVault_properties_typeProperties_baseUrl')]"
 					},
+					"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('LS_AzureDatabricks_properties_typeProperties_existingClusterId')]"
+					},
 					"LS_AzureSqlDatabase_properties_typeProperties_server": {
 						"value": "[parameters('LS_AzureSqlDatabase_properties_typeProperties_server')]"
 					},
@@ -93,9 +96,6 @@
 					},
 					"LS_PostgreSql_properties_typeProperties_username": {
 						"value": "[parameters('LS_PostgreSql_properties_typeProperties_username')]"
-					},
-					"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
-						"value": "[parameters('LS_AzureDatabricks_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},
