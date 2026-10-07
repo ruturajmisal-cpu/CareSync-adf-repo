@@ -48,6 +48,7 @@
 						"value": "@activity('Read_Source_Tables_List').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "Ingest_From_Source_To_Silver",
@@ -154,11 +155,11 @@
 		"parameters": {
 			"source_system": {
 				"type": "string",
-				"defaultValue": "neon_postgres"
+				"defaultValue": "adls_csv"
 			},
 			"adf_run_id": {
 				"type": "string",
-				"defaultValue": "a2"
+				"defaultValue": "a6"
 			}
 		},
 		"variables": {
