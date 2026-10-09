@@ -9,6 +9,10 @@
 			"env": {
 				"type": "string",
 				"value": "DEV"
+			},
+			"logic_apps_url": {
+				"type": "string",
+				"value": "https://prod-53.southeastasia.logic.azure.com:443/workflows/10269e7bfb4345bf875c2d8b8f970568/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=ILiaUsLrgcI-0bKWIAJA7Dbyl-KJK2LutG6vrwJFpY0"
 			}
 		}
 	},
