@@ -1,0 +1,12 @@
+{
+	"name": "caresyncproject-adf",
+	"properties": {
+		"globalParameters": {
+			"email_recepient": {
+				"type": "string",
+				"value": "ruturajmisal.dao@gmail.com"
+			}
+		}
+	},
+	"location": "southeastasia"
+}
