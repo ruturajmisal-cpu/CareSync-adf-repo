@@ -84,13 +84,13 @@
 				}
 			},
 			{
-				"name": "Execute Pipeline1",
+				"name": "Send_Email",
 				"type": "ExecutePipeline",
 				"dependsOn": [
 					{
 						"activity": "Silver_To_Gold",
 						"dependencyConditions": [
-							"Succeeded"
+							"Completed"
 						]
 					}
 				],
@@ -99,7 +99,17 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"waitOnCompletion": true
+					"pipeline": {
+						"referenceName": "PL_SEND_EMAIL",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"adf_run_id": {
+							"value": "@pipeline().RunId",
+							"type": "Expression"
+						}
+					}
 				}
 			}
 		],
